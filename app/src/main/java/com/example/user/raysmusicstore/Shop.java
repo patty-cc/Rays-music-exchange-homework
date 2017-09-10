@@ -7,17 +7,12 @@ import java.util.ArrayList;
 
 public class Shop {
 
-    String shopName;
+
     ArrayList<Sellable> stock;
 
-
-    public Shop( String shopName, String[]){
-       this.shopName = shopName;
-       this.stock = new ArrayList<>();
+    public Shop(){
+        this.stock = new ArrayList<>();
     }
 
-    public String getShopName(){
-        return shopName;
-    }
-
+    public
 }

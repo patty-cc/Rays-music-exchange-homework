@@ -15,17 +15,13 @@ public class ShopTest {
 
     @Before
     public void before(){
-        shop = new Shop( "The Music Emporium");
         stock = new ArrayList<>();
+        stock.add( new Amplifier( "Amplifier", 20.00, 40.00 ));
     }
 
-    @Test
-    public void testShopName(){
-        assertEquals( "The Music Emporium", shop.getShopName());
-    }
 
     @Test
     public void testShopStockArray(){
-        shop = new Shop( "The Music Emproium", stock );
+       assertEquals( "Amplifier" , stock.getStock());
     }
 }
